@@ -33,8 +33,9 @@
 		<dependency.pmd.version>6.55.0</dependency.pmd.version>
 		<dependency.reflowSkin.version>2.3.4</dependency.reflowSkin.version>
 		<dependency.spotbugs-annotations.version>4.7.3</dependency.spotbugs-annotations.version>
+		<dependency.xmlbeans.version>5.2.1</dependency.xmlbeans.version>
 
-		<plugin.maven-antrun.version>3.1.0</plugin.maven-antrun.version>
+    <plugin.maven-antrun.version>3.1.0</plugin.maven-antrun.version>
 		<plugin.maven-assembly.version>3.4.2</plugin.maven-assembly.version>
 		<plugin.maven-checkstyle.version>3.4.0</plugin.maven-checkstyle.version>
 		<plugin.maven-clean.version>3.2.0</plugin.maven-clean.version>
@@ -166,6 +167,11 @@
 				<groupId>org.apache.maven.plugin-tools</groupId>
 				<artifactId>maven-plugin-annotations</artifactId>
 				<version>${dependency.maven-plugin-tools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.xmlbeans</groupId>
+				<artifactId>xmlbeans</artifactId>
+				<version>${dependency.xmlbeans.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
