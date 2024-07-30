@@ -1,18 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>gov.nist.secauto</groupId>
+	<groupId>dev.metaschema</groupId>
 	<artifactId>oss-maven</artifactId>
-	<version>28-SNAPSHOT</version>
+	<version>1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Build Root</name>
-	<description>A common build root for all NIST projects related to Security
-		Automation.</description>
+	<description>A common build root for all Metaschema projects.</description>
 	<url>${site.url}</url>
 	<properties>
 		<!-- shared site configuration -->
-		<site.url>https://pages.nist.gov/oss-maven</site.url>
-		<scm.url>https://github.com/usnistgov/oss-maven</scm.url>
-		<issueManagement.url>https://github.com/usnistgov/oss-maven/issues</issueManagement.url>
+		<site.url>https://oss-maven.metaschema.dev</site.url>
+		<scm.url>https://github.com/metaschema-framework/oss-maven</scm.url>
+		<issueManagement.url>https://github.com/metaschema-framework/oss-maven/issues</issueManagement.url>
 		<!-- various encodings -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
@@ -34,7 +33,6 @@
 		<dependency.pmd.version>6.55.0</dependency.pmd.version>
 		<dependency.reflowSkin.version>2.3.4</dependency.reflowSkin.version>
 		<dependency.spotbugs-annotations.version>4.7.3</dependency.spotbugs-annotations.version>
-		<dependency.xmlbeans.version>5.1.1</dependency.xmlbeans.version>
 
 		<plugin.maven-antrun.version>3.1.0</plugin.maven-antrun.version>
 		<plugin.maven-assembly.version>3.4.2</plugin.maven-assembly.version>
@@ -80,19 +78,16 @@
 	</issueManagement>
 	<scm>
 		<url>${scm.url}/tree/main</url>
-		<connection>scm:git:ssh://git@github.com/usnistgov/oss-maven.git</connection>
+		<connection>scm:git:ssh://git@github.com/metaschema-framework/oss-maven.git</connection>
 		<developerConnection>
-			scm:git:ssh://git@github.com/usnistgov/oss-maven.git</developerConnection>
+			scm:git:ssh://git@github.com/metaschema-framework/oss-maven.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>github</id>
+			<name>GitHub Metaschema Framework Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/metaschema-framework/oss-maven</url>
 		</repository>
 		<site>
 			<id>site_scm</id>
@@ -101,34 +96,30 @@
 	</distributionManagement>
 	<licenses>
 		<license>
-			<name>NIST License</name>
-			<url>https://www.nist.gov/director/licensing</url>
+			<name>CC0-1.0</name>
+			<url>https://creativecommons.org/publicdomain/zero/1.0/</url>
 			<distribution>repo</distribution>
-			<comments>NIST software License</comments>
 		</license>
 	</licenses>
 	<developers>
 		<developer>
-			<id>david.waltermire@nist.gov</id>
+			<id>david.waltermire@gsa.gov</id>
 			<name>David Waltermire</name>
-			<email>david.waltermire@nist.gov</email>
-			<organization>National Institute of Standards and Technology</organization>
+			<email>david.waltermire@gsa.gov</email>
+			<organization>General Services Administration</organization>
 			<roles>
+				<role>developer</role>
 				<role>maintainer</role>
 			</roles>
+			<timezone>America/New_York</timezone>
 		</developer>
 	</developers>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>gov.nist.secauto</groupId>
+				<groupId>dev.metaschema</groupId>
 				<artifactId>oss-build-support</artifactId>
-				<version>28-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.xmlbeans</groupId>
-				<artifactId>xmlbeans</artifactId>
-				<version>${dependency.xmlbeans.version}</version>
+				<version>1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
@@ -246,7 +237,7 @@
 										<banSnapshots>true</banSnapshots>
 										<phases>clean,install,deploy,site</phases>
 										<message>[ERROR] Best Practice is to always define plugin versions!</message>
-										<unCheckedPluginList>gov.nist.secauto:oss-build-support</unCheckedPluginList>
+										<unCheckedPluginList>dev.metaschema:oss-build-support</unCheckedPluginList>
 									</requirePluginVersions>
 								</rules>
 							</configuration>
@@ -529,7 +520,7 @@
 					<configuration>
 						<!-- deploy is handled by the scm plugin -->
 						<skipDeploy>true</skipDeploy>
-						<!-- <scmBranch>nist-pages</scmBranch> -->
+						<!-- <scmBranch>github-pages</scmBranch> -->
 						<relativizeSiteLinks>true</relativizeSiteLinks>
 						<generateReports>true</generateReports>
 						<!--

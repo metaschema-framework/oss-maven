@@ -2,13 +2,13 @@
 
 ## License Management
 
-To check NIST license is included in all source files:
+To check preamble is included in all source files:
 
 ```bash
 mvn license:check
 ```
 
-To add the NIST license to all source files:
+To add the preamble to all source files:
 
 ```bash
 mvn license:format

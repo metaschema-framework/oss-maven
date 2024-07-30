@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/DECORATION/1.8.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 http://maven.apache.org/xsd/decoration-1.8.0.xsd"
-  name="NIST Open Source Maven Parent">
+  name="Metaschema Open Source Maven Parent">
 
   <skin>
     <groupId>io.github.devacfr.maven.skins</groupId>
@@ -37,12 +37,12 @@
       <brand>
         <name>
          <![CDATA[
-         <div id="nistheadergoeshere"></div> Security Automation Maven Support
+         Metaschema Maven Support
          ]]>
         </name>
       </brand>
 
-      <slogan>Default Maven build settings for NIST Security Automation projects.</slogan>
+      <slogan>Default Maven build settings for Metaschema open source projects.</slogan>
       <bottomDescription quote="false">
         <![CDATA[
           <div>
@@ -50,7 +50,7 @@
                 project sites, and checks for serious coding issues, code style, and licenses in code.
             <div class="m-1">
               <a href="${this.scm.url}" class="p-1 text-secondary"><i class="fab fa-github"></i></a>
-              <a href="mailto:scap@nist.gov" class="p-1 text-secondary"><i class="fas fa-envelope"></i></a>
+              <a href="mailto:maintainers@metaschema.dev" class="p-1 text-secondary"><i class="fas fa-envelope"></i></a>
               <a href="https://gitter.im/oss-maven/community" class="p-1 text-secondary"><i class="fab fa-gitter"></i></a>
             </div>
           </div>
@@ -99,21 +99,6 @@
         document.querySelectorAll('div.source pre').forEach((block) => {
           hljs.highlightBlock(block);
         });
-        $(document).ready(function () {
-          $.ajax({
-            url: "https://pages.nist.gov/nist-header-footer/boilerplate-header.html",
-            cache: false,
-            dataType: "html",
-            success: function (data) { $('#nistheadergoeshere').append(data); }
-          });
-          $("body").append('<div id="nistfootergoeshere"></div>');
-          $.ajax({
-            url: "https://pages.nist.gov/nist-header-footer/boilerplate-footer.html",
-            cache: false,
-            dataType: "html",
-            success: function (data) { $('#nistfootergoeshere').append(data); }
-          });
-        });
         ]]>
         </script>
       </endContent>
@@ -132,9 +117,7 @@
       <![CDATA[
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <link rel="manifest" href="$resourcePath/site.webmanifest">
-      <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
       <link rel="stylesheet" href="$resourcePath/css/custom.css">
-      <script async type=text/javascript id=_fed_an_ua_tag src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
       ]]>
     </head>
     <links>

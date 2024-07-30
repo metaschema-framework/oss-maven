@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>gov.nist.secauto</groupId>
+		<groupId>dev.metaschema</groupId>
 		<artifactId>oss-maven</artifactId>
-		<version>28-SNAPSHOT</version>
+		<version>1-SNAPSHOT</version>
 	</parent>
 	<artifactId>oss-parent</artifactId>
 	<packaging>pom</packaging>
 	<name>Parent POM</name>
-	<description>A Common Maven Build Parent for NIST Open Source Projects, that provides for centralized management of plugin versions, code style, and other code quality checks.</description>
+	<description>A Common Maven Build Parent for Metaschema Open Source Projects, that provides for centralized management of plugin versions, code style, and other code quality checks.</description>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -36,9 +36,9 @@
 					</executions>
 					<dependencies>
 						<dependency>
-							<groupId>gov.nist.secauto</groupId>
+							<groupId>dev.metaschema</groupId>
 							<artifactId>oss-build-support</artifactId>
-							<version>28-SNAPSHOT</version>
+							<version>1-SNAPSHOT</version>
 						</dependency>
 					</dependencies>
 				</plugin>
@@ -55,7 +55,7 @@
 							<configuration>
 								<licenseSets>
 									<licenseSet>
-										<header>license/nist/license.txt</header>
+										<header>cc0-dedication.txt</header>
 										<includes>
 											<include>src/main/java/**/*.java</include>
 											<include>target/generated-sources/**/*.java</include>
@@ -73,7 +73,7 @@
 							<configuration>
 								<licenseSets>
 									<licenseSet>
-										<header>license/nist/license.txt</header>
+										<header>cc0-dedication.txt</header>
 										<includes>
 											<include>src/test/java/**/*.java</include>
 											<include>target/generated-test-sources/**/*.java</include>
@@ -85,9 +85,9 @@
 					</executions>
 					<dependencies>
 						<dependency>
-							<groupId>gov.nist.secauto</groupId>
+							<groupId>dev.metaschema</groupId>
 							<artifactId>oss-build-support</artifactId>
-							<version>28-SNAPSHOT</version>
+							<version>1-SNAPSHOT</version>
 						</dependency>
 					</dependencies>
 				</plugin>
@@ -123,9 +123,9 @@
 					</executions>
 					<dependencies>
 						<dependency>
-							<groupId>gov.nist.secauto</groupId>
+							<groupId>dev.metaschema</groupId>
 							<artifactId>oss-build-support</artifactId>
-							<version>28-SNAPSHOT</version>
+							<version>1-SNAPSHOT</version>
 						</dependency>
 						<dependency>
 							<groupId>com.puppycrawl.tools</groupId>
@@ -197,9 +197,9 @@
 							<version>${dependency.asm.version}</version>
 						</dependency>
 						<dependency>
-							<groupId>gov.nist.secauto</groupId>
+							<groupId>dev.metaschema</groupId>
 							<artifactId>oss-build-support</artifactId>
-							<version>28-SNAPSHOT</version>
+							<version>1-SNAPSHOT</version>
 						</dependency>
 					</dependencies>
 				</plugin>
