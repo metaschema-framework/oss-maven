@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dev.metaschema</groupId>
 	<artifactId>oss-maven</artifactId>
-	<version>1-SNAPSHOT</version>
+	<version>1</version>
 	<packaging>pom</packaging>
 	<name>Build Root</name>
 	<description>A common build root for all Metaschema projects.</description>
@@ -68,7 +68,7 @@
 		<plugin.jacoco.version>0.8.10</plugin.jacoco.version>
 		<plugin.jdepend.version>2.0</plugin.jdepend.version>
 		<plugin.license.version>4.2</plugin.license.version>
-		<plugin.nexus-staging.version>1.6.13</plugin.nexus-staging.version>
+		<plugin.nexus-staging.version>1.7.0</plugin.nexus-staging.version>
 		<plugin.spotbugs.version>4.7.3.4</plugin.spotbugs.version>
 		<plugin.taglist.version>3.0.0</plugin.taglist.version>
 		<plugin.versions.version>2.15.0</plugin.versions.version>
@@ -86,9 +86,8 @@
 	</scm>
 	<distributionManagement>
 		<repository>
-			<id>github</id>
-			<name>GitHub Metaschema Framework Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/metaschema-framework/oss-maven</url>
+			<id>central</id>
+			<url>https://central.sonatype.com</url>
 		</repository>
 		<site>
 			<id>site_scm</id>
@@ -120,7 +119,7 @@
 			<dependency>
 				<groupId>dev.metaschema</groupId>
 				<artifactId>oss-build-support</artifactId>
-				<version>1-SNAPSHOT</version>
+				<version>1</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
@@ -506,16 +505,28 @@
 					<version>${plugin.maven-deploy.version}</version>
 				</plugin>
 				<plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>0.5.0</version>
+          <extensions>true</extensions>
+          <configuration>
+             <publishingServerId>central</publishingServerId>
+             <autoPublish>false</autoPublish>
+          </configuration>
+        </plugin>
+<!--
+				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
 					<artifactId>nexus-staging-maven-plugin</artifactId>
 					<version>${plugin.nexus-staging.version}</version>
 					<extensions>true</extensions>
 					<configuration>
 						<serverId>ossrh</serverId>
-						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+						<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
 						<autoReleaseAfterClose>true</autoReleaseAfterClose>
 					</configuration>
 				</plugin>
+-->
 				<!-- ######################### -->
 				<!-- site lifecycle            -->
 				<!-- ######################### -->
@@ -682,6 +693,10 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 	<reporting>
@@ -762,6 +777,7 @@
 			</build>
 		</profile>
 	</profiles>
+
 	<modules>
 		<module>oss-build-support</module>
 		<module>oss-parent</module>
