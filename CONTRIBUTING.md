@@ -44,39 +44,35 @@ This repository consists of the following directories and files pertaining to th
 - [LICENSE.md](LICENSE.md): This file contains license information for the files in this GitHub repository.
 - [USERS.md](USERS.md): This file explains which types of users are most likely to benefit from use of this project and its artifacts.
 
-## Contributing to a Development Sprint
+## Contributing to ongoing Development
 
-This project is using the GitHub [project cards](../../projects) feature to track development sprints as part of the core project work stream. A typical development sprint lasts roughly a month, with some sprints lasting slightly less or more to work around major holidays or events attended by the core project team. The active sprint is typically the lowest numbered open project within the previously referenced page.
+This project is using the GitHub [project cards](../../projects) feature to track development using a [Kanban](https://en.wikipedia.org/wiki/Kanban_\(development\)) approach.
 
 ### User Stories
 
-Each development sprint consists of a set of [user stories](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22User+Story%22), that represent features, actions, or enhancements that are intended to be developed during the sprint. Each user story is based on a [template](../../issues/new?template=feature_request.md&labels=enhancement%2C+User+Story) and describes the basic problem or need to be addressed, a set of detailed goals to accomplish, any dependencies that must be addressed to start or complete the user story, and the criteria for acceptance of the contribution.
+Project cards are used to represent a set of [user stories](../../issues?q=is%3Aopen+is%3Aissue+label%3A%22User+Story%22), that describe features, actions, or enhancements that are intended to be developed. Each user story is based on a [template](../../issues/new?template=feature_request.md&labels=enhancement%2C+User+Story) and describes the basic problem or need to be addressed, a set of detailed goals to accomplish, any dependencies that must be addressed to start or complete the user story, and the criteria for acceptance of the contribution.
 
 The goals in a user story will be bulleted, indicating that each goal can be worked on in parallel, or numbered, indicating that each goal must be worked on sequentially. Each goal will be assigned to one or more individuals to accomplish.
 
-Note: A user story that is not part of a specific development sprint can still be worked on at any time by any project contributor. When a user story is not assigned to sprint, its status will not be tracked as part of our sprint management efforts, but when completed will still be considered as a possible contribution to the project.
+The user story issue discussion will be used for periodic updates, questions, and comments related to designs and requirements.
 
-### Reporting User Story Status
-
-When working on a goal that is part of a user story you will want to provide a periodic report on any progress that has been made until that goal has been completed. This status must be reported as a comment to the associated user story issue. For a user story that is part of a development sprint, status reports will typically be made by close of business the day before the weekly status meeting. Progress on goals in each issue will be tracked by the NIST leads and will be used to update the project cards for the current sprint.
-
-When describing any open issues encountered use an "\@mention" of the individual who needs to respond to the issue. This will ensure that the individual is updated with this status. Please also raise any active, unresolved issues on the weekly status calls.
+Note: A user story that is not selected as an active work item can still be worked on at any time by any project contributor and will still be considered as a possible contribution to the project.
 
 ### Project Status
 
-The project cards for each sprint will be in one of the following states:
+Each project card will be in one of the following states:
 
-- "To do" - The user story has been assigned to the sprint, but work has not started.
-- "In progress" - Work has started on the user story, but development of the issue has not completed.
-- "Review in Progress" - All goals for the user story have been completed and one or more pull requests have been submitted for all associated work. The NIST team will review the pull requests to ensure that all goals and acceptance criteria have been met.
-- "Reviewer Approved" - All reviews of a pull request related to a user story have been completed. The pull request still needs to be merged.
+- "To do" - The user story has been queued for work, but the work has not started.
+- "In progress" - Work has started on the user story, but development has not been completed.
+- "Review in Progress" - All goals for the user story have been completed and one or more pull requests have been submitted for all associated work. Associated PRs require review by code owners and community reviewers to ensure that all goals and acceptance criteria have been met and that any identified concerns have been addressed.
+- "Reviewer Approved" - All required reviews of a pull request related to a user story have been completed. The pull request still needs to be merged.
 - "Done" - Once the contributed work has been reviewed and the pull request has been merged, the user story will be marked as "Done".
 
-Note: A pull request must be submitted for all goals before an issue will be moved to the "under review" status. If any goals or acceptance criteria have not been met, then the user story will be commented on to provide feedback, and the issue will be returned to the "In progress" state.
+Note: One or more pull requests must be submitted addressing all user story goals before the issue will be moved to the "under review" status. If any goals or acceptance criteria have not been met, then the user story will be commented on to provide feedback, and the issue will be returned to the "In progress" state.
 
 ## Communications mechanisms
 
-You can contact the maintainers of this project at *scap@nist.gov* if you are interested in contributing to the development of this project or exchanging ideas. 
+You can contact the maintainers of this project at [maintainers@metaschema.dev](mailto:maintainers@metaschema.dev) if you are interested in contributing to the development of this project or exchanging ideas. 
 
 # Licenses and attribution
 

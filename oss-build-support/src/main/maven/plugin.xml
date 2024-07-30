@@ -27,7 +27,7 @@ This repairs the broken functionality of the compile mojo due to the required ex
 <plugin>
     <name>xmlbeans</name>
     <description>Maven plugin for Apache XmlBeans</description>
-    <groupId>gov.nist.secauto</groupId>
+    <groupId>dev.metaschema</groupId>
     <artifactId>oss-build-support</artifactId>
     <version>@project.version@</version>
     <goalPrefix>oss-build.plugin</goalPrefix>
