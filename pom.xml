@@ -22,56 +22,57 @@
 		<maven.compiler.release>11</maven.compiler.release>
 		<javac.debuglevel>lines,source,vars</javac.debuglevel>
 
-		<dependency.asm.version>9.2</dependency.asm.version>
-		<dependency.checkstyle.version>10.5.0</dependency.checkstyle.version>
+		<dependency.asm.version>9.7</dependency.asm.version>
+		<dependency.checkstyle.version>10.17.0</dependency.checkstyle.version>
 		<!-- the doxia version relates directly to the maven-site-plugin version -->
 		<dependency.doxia.version>2.0.0-M7</dependency.doxia.version>
+		<dependency.extra-enforcer-rules.version>1.8.0</dependency.extra-enforcer-rules.version>
 		<dependency.junit.version>4.13.2</dependency.junit.version>
-		<dependency.junit5.version>5.9.2</dependency.junit5.version>
+		<dependency.junit5.version>5.10.3</dependency.junit5.version>
 		<dependency.maven-plugin-tools.version>3.8.1</dependency.maven-plugin-tools.version>
 		<dependency.maven-velocity.version>2.3</dependency.maven-velocity.version>
-		<dependency.pmd.version>6.55.0</dependency.pmd.version>
+		<dependency.pmd.version>7.4.0</dependency.pmd.version>
 		<dependency.reflowSkin.version>2.3.4</dependency.reflowSkin.version>
-		<dependency.spotbugs-annotations.version>4.7.3</dependency.spotbugs-annotations.version>
+		<dependency.spotbugs-annotations.version>4.8.6</dependency.spotbugs-annotations.version>
 		<dependency.xmlbeans.version>5.2.1</dependency.xmlbeans.version>
 
 		<plugin.maven-antrun.version>3.1.0</plugin.maven-antrun.version>
-		<plugin.maven-assembly.version>3.4.2</plugin.maven-assembly.version>
-		<plugin.maven-checkstyle.version>3.2.1</plugin.maven-checkstyle.version>
-		<plugin.maven-clean.version>3.2.0</plugin.maven-clean.version>
-		<plugin.maven-compile.version>3.11.0</plugin.maven-compile.version>
-		<plugin.maven-dependency.version>3.6.0</plugin.maven-dependency.version>
-		<plugin.maven-deploy.version>3.0.0</plugin.maven-deploy.version>
-		<plugin.maven-enforcer.version>3.1.0</plugin.maven-enforcer.version>
-		<plugin.maven-exec.version>3.1.0</plugin.maven-exec.version>
-		<plugin.maven-gpg.version>3.0.1</plugin.maven-gpg.version>
-		<plugin.maven-install.version>3.1.0</plugin.maven-install.version>
-		<plugin.maven-jar.version>3.3.0</plugin.maven-jar.version>
-		<plugin.maven-javadoc.version>3.5.0</plugin.maven-javadoc.version>
-		<plugin.maven-jxr.version>3.3.0</plugin.maven-jxr.version>
+		<plugin.maven-assembly.version>3.7.1</plugin.maven-assembly.version>
+		<plugin.maven-checkstyle.version>3.4.0</plugin.maven-checkstyle.version>
+		<plugin.maven-clean.version>3.4.0</plugin.maven-clean.version>
+		<plugin.maven-compile.version>3.13.0</plugin.maven-compile.version>
+		<plugin.maven-dependency.version>3.7.1</plugin.maven-dependency.version>
+		<plugin.maven-deploy.version>3.1.2</plugin.maven-deploy.version>
+		<plugin.maven-enforcer.version>3.5.0</plugin.maven-enforcer.version>
+		<plugin.maven-exec.version>3.3.0</plugin.maven-exec.version>
+		<plugin.maven-failsafe.version>3.3.1</plugin.maven-failsafe.version>
+		<plugin.maven-gpg.version>3.2.4</plugin.maven-gpg.version>
+		<plugin.maven-install.version>3.1.2</plugin.maven-install.version>
+		<plugin.maven-jar.version>3.4.2</plugin.maven-jar.version>
+		<plugin.maven-javadoc.version>3.8.0</plugin.maven-javadoc.version>
+		<plugin.maven-jxr.version>3.4.0</plugin.maven-jxr.version>
 		<plugin.maven-plugin.version>${dependency.maven-plugin-tools.version}</plugin.maven-plugin.version>
-		<plugin.maven-project-info-reports.version>3.4.5</plugin.maven-project-info-reports.version>
-		<plugin.maven-pmd.version>3.21.0</plugin.maven-pmd.version>
-		<plugin.maven-release.version>3.0.0-M7</plugin.maven-release.version>
-		<plugin.maven-resources.version>3.3.0</plugin.maven-resources.version>
-		<plugin.maven-scm.version>2.0.0-M3</plugin.maven-scm.version>
-		<plugin.maven-scm-publish.version>3.1.0</plugin.maven-scm-publish.version>
+		<plugin.maven-project-info-reports.version>3.6.2</plugin.maven-project-info-reports.version>
+		<plugin.maven-pmd.version>3.24.0</plugin.maven-pmd.version>
+		<plugin.maven-release.version>3.1.1</plugin.maven-release.version>
+		<plugin.maven-resources.version>3.3.1</plugin.maven-resources.version>
+		<plugin.maven-scm.version>2.1.0</plugin.maven-scm.version>
+		<plugin.maven-scm-publish.version>3.3.0</plugin.maven-scm-publish.version>
 		<plugin.maven-site.version>4.0.0-M9</plugin.maven-site.version>
-		<plugin.maven-source.version>3.2.1</plugin.maven-source.version>
-		<plugin.maven-surefire.version>3.1.2</plugin.maven-surefire.version>
-		<plugin.maven-surefire-report.version>3.1.2</plugin.maven-surefire-report.version>
-		<plugin.maven-war.version>3.3.2</plugin.maven-war.version>
+		<plugin.maven-source.version>3.3.1</plugin.maven-source.version>
+		<plugin.maven-surefire.version>3.3.1</plugin.maven-surefire.version>
+		<plugin.maven-surefire-report.version>3.3.1</plugin.maven-surefire-report.version>
+		<plugin.maven-war.version>3.4.0</plugin.maven-war.version>
 
-		<plugin.build-helper.version>3.3.0</plugin.build-helper.version>
-		<plugin.failsafe.version>3.1.2</plugin.failsafe.version>
-		<plugin.formatter.version>2.23.0</plugin.formatter.version>
-		<plugin.jacoco.version>0.8.10</plugin.jacoco.version>
+		<plugin.build-helper.version>3.6.0</plugin.build-helper.version>
+		<plugin.formatter.version>2.24.1</plugin.formatter.version>
+		<plugin.jacoco.version>0.8.12</plugin.jacoco.version>
 		<plugin.jdepend.version>2.0</plugin.jdepend.version>
-		<plugin.license.version>4.2</plugin.license.version>
+		<plugin.license.version>4.5</plugin.license.version>
 		<plugin.nexus-staging.version>1.7.0</plugin.nexus-staging.version>
-		<plugin.spotbugs.version>4.7.3.4</plugin.spotbugs.version>
-		<plugin.taglist.version>3.0.0</plugin.taglist.version>
-		<plugin.versions.version>2.15.0</plugin.versions.version>
+		<plugin.spotbugs.version>4.8.6.2</plugin.spotbugs.version>
+		<plugin.taglist.version>3.1.0</plugin.taglist.version>
+		<plugin.versions.version>2.17.1</plugin.versions.version>
 	</properties>
 	<issueManagement>
 		<url>${issueManagement.url}</url>
@@ -307,7 +308,7 @@
 						<dependency>
 							<groupId>org.codehaus.mojo</groupId>
 							<artifactId>extra-enforcer-rules</artifactId>
-							<version>1.6.1</version>
+							<version>${dependency.extra-enforcer-rules.version}</version>
 						</dependency>
 					</dependencies>
 				</plugin>
@@ -419,7 +420,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-failsafe-plugin</artifactId>
-					<version>${plugin.failsafe.version}</version>
+					<version>${plugin.maven-failsafe.version}</version>
 				</plugin>
 				<!-- ========================= -->
 				<!-- post-integration-test     -->
