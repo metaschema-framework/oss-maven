@@ -22,7 +22,7 @@
 		<maven.compiler.release>11</maven.compiler.release>
 		<javac.debuglevel>lines,source,vars</javac.debuglevel>
 
-		<dependency.asm.version>9.2</dependency.asm.version>
+		<dependency.asm.version>9.7</dependency.asm.version>
 		<dependency.checkstyle.version>10.5.0</dependency.checkstyle.version>
 		<!-- the doxia version relates directly to the maven-site-plugin version -->
 		<dependency.doxia.version>2.0.0-M7</dependency.doxia.version>
