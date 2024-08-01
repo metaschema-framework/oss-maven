@@ -180,7 +180,7 @@
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-scm</artifactId>
-				<version>2.10</version>
+				<version>3.5.3</version>
 			</extension>
 			<extension>
 				<groupId>org.apache.maven.scm</groupId>
