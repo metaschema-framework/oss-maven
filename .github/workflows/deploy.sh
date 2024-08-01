@@ -20,10 +20,9 @@ Options:
   -b, --deploy-branch BRANCH    Delpoy to specified branch
 "
 
-
 run_build() {
   echo "Running Maven"
-  mvn -Preporting -Prelease package site site:stage
+  mvn -Prelease package site
 }
 
 parse_args() {

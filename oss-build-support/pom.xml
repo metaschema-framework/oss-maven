@@ -13,7 +13,7 @@
 	<name>Common Build Files</name>
 	<description>A shared resource providing common build dependencies used in
 		maven builds for code style, and other code quality checks.</description>
-
+	<url>${site.url}${project.artifactId}</url>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>

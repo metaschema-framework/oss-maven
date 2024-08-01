@@ -138,9 +138,9 @@
       <item name="Fork on GitHub" href="${this.scm.url}"/>
     </menu>
     <menu name="Documentation" inherit="bottom">
-      <item name="Maven Usage" href="./oss-parent/usage.html"/>
-      <item name="Build Features" href="./oss-parent/features.html"/>
-      <item name="Eclipse Configuration" href="./oss-build-support/index.html"/>
+      <item name="Maven Usage" href="index.html#usage"/>
+      <item name="Build Features" href="index.html#build-features"/>
+      <item name="Eclipse Configuration" href="oss-build-support/index.html"/>
     </menu>
     <menu name="Modules" ref="modules"/>
     <menu name="Maven Documentation" ref="reports" inherit="bottom"/>

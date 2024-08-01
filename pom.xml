@@ -9,7 +9,7 @@
 	<url>${site.url}</url>
 	<properties>
 		<!-- shared site configuration -->
-		<site.url>https://oss-maven.metaschema.dev</site.url>
+		<site.url>https://oss-maven.metaschema.dev/</site.url>
 		<scm.url>https://github.com/metaschema-framework/oss-maven</scm.url>
 		<issueManagement.url>https://github.com/metaschema-framework/oss-maven/issues</issueManagement.url>
 		<!-- various encodings -->
@@ -561,7 +561,7 @@
 							<artifactId>doxia-module-markdown</artifactId>
 							<version>${dependency.doxia.version}</version>
 						</dependency>
-						<!--
+<!--
 						<dependency>
 							<groupId>org.apache.velocity</groupId>
 							<artifactId>velocity-engine-core</artifactId>
