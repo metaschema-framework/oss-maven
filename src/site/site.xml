@@ -116,7 +116,6 @@
     <head>
       <![CDATA[
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <link rel="manifest" href="$resourcePath/site.webmanifest">
       <link rel="stylesheet" href="$resourcePath/css/custom.css">
       ]]>
     </head>
