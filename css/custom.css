@@ -1,0 +1,12 @@
+.subfooter {
+    display: none;
+}
+#m-top-navbar.bg-primary {
+  background-color: #000 !important;
+}
+#brandtext {
+  display: inline;
+}
+.projectVersion {
+  padding-right: 0.5rem;
+}
