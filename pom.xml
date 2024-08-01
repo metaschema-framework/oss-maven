@@ -70,7 +70,7 @@
 		<plugin.license.version>4.2</plugin.license.version>
 		<plugin.nexus-staging.version>1.7.0</plugin.nexus-staging.version>
 		<plugin.spotbugs.version>4.7.3.4</plugin.spotbugs.version>
-		<plugin.taglist.version>3.0.0</plugin.taglist.version>
+		<plugin.taglist.version>3.1.0</plugin.taglist.version>
 		<plugin.versions.version>2.15.0</plugin.versions.version>
 	</properties>
 	<issueManagement>
