@@ -57,16 +57,6 @@ jobs:
         java-version-file: ${{ env.JAVA_VERSION_FILE }}
         distribution: ${{ env.JAVA_DISTRO }}
         cache: 'maven'
-#    - uses: s4u/maven-settings-action@7802f6aec16c9098b4798ad1f1d8ac75198194bd
-#      with:
-#        servers: |
-#          [{
-#            "id": "github",
-#            "configuration": {
-#              "username": "GITHUB_ACTOR",
-#              "password": "GITHUB_TOKEN"
-#            }
-#          }]
 #    - name: Initialize CodeQL
 #      if: github.event_name == 'push'
 #      uses: github/codeql-action/init@3ab4101902695724f9365a384f86c1074d94e18c
