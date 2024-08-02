@@ -25,7 +25,7 @@
 		<dependency.asm.version>9.7</dependency.asm.version>
 		<dependency.checkstyle.version>10.17.0</dependency.checkstyle.version>
 		<!-- the doxia version relates directly to the maven-site-plugin version -->
-		<dependency.doxia.version>2.0.0-M7</dependency.doxia.version>
+		<dependency.doxia.version>2.0.0-M12</dependency.doxia.version>
 		<dependency.extra-enforcer-rules.version>1.8.0</dependency.extra-enforcer-rules.version>
 		<dependency.junit.version>4.13.2</dependency.junit.version>
 		<dependency.junit5.version>5.10.3</dependency.junit5.version>
