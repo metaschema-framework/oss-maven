@@ -28,7 +28,7 @@
 		<dependency.extra-enforcer-rules.version>1.8.0</dependency.extra-enforcer-rules.version>
 		<dependency.junit.version>4.13.2</dependency.junit.version>
 		<dependency.junit5.version>5.10.3</dependency.junit5.version>
-		<dependency.maven-plugin-tools.version>3.8.1</dependency.maven-plugin-tools.version>
+		<dependency.maven-plugin-tools.version>3.13.1</dependency.maven-plugin-tools.version>
 		<dependency.pmd.version>7.4.0</dependency.pmd.version>
 		<dependency.spotbugs-annotations.version>4.8.6</dependency.spotbugs-annotations.version>
 		<dependency.xmlbeans.version>5.2.1</dependency.xmlbeans.version>
