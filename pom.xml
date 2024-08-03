@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dev.metaschema</groupId>
 	<artifactId>oss-maven</artifactId>
-	<version>3</version>
+	<version>4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Build Root</name>
 	<description>A common build root for all Metaschema projects.</description>
@@ -117,7 +117,7 @@
 			<dependency>
 				<groupId>dev.metaschema</groupId>
 				<artifactId>oss-build-support</artifactId>
-				<version>3</version>
+				<version>4-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
