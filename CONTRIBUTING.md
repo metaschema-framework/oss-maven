@@ -18,8 +18,7 @@ For more information on the project's current needs and priorities, see the proj
 
 All requests for changes and enhancements to the repository are initiated through the project's [GitHub issue tracker](../../issues). To initiate a request, please [create a new issue](https://help.github.com/articles/creating-an-issue/). The following issue templates exist for creating a new issue:
 * [User Story](../../issues/new?assignees=&labels=User+Story%2Cenhancement&projects=&template=1-feature_request.yml): Use to describe a new feature or capability to be added to the project.
-* [Defect Report](../../issues/new?template=bug_report.md&labels=bug): Use to report a problem with an existing feature or capability.
-* [Question](../../issues/new?labels=question&template=question.md): Use to ask a question about the project or the contents of the repository.
+* [Defect Report](../../issues/new?assignees=&labels=bug&projects=&template=2-bug_report.yml): Use to report a problem with an existing feature or capability.
 
 The project team regularly reviews the open issues, prioritizes their handling, and updates the issue statuses, proving comments on the current status as needed.
 

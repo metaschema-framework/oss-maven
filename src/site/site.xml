@@ -5,9 +5,9 @@
   name="Metaschema Open Source Maven Parent">
 
   <skin>
-    <groupId>io.github.devacfr.maven.skins</groupId>
-    <artifactId>reflow-maven-skin</artifactId>
-    <version>${this.dependency.reflowSkin.version}</version>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>2.0.0-M9</version>
   </skin>
 
   <publishDate position="none" format="yyyy-MM-dd"/>
@@ -16,13 +16,23 @@
 
   <bannerLeft>
     <name><![CDATA[
-      Security Automation Maven Project
-      ]]>
+      Maven Build Parent for Java Metaschema Projects
+    ]]>
     </name>
     <href>${this.site.url}</href>
   </bannerLeft>
 
   <custom>
+    <fluidoSkin>
+      <googleSearch>
+        <sitesearch/>
+      </googleSearch>
+      <gitHub>
+        <projectId>metaschema-framework/oss-maven</projectId>
+        <ribbonOrientation>right</ribbonOrientation>
+        <ribbonColor>black</ribbonColor>
+      </gitHub>
+    </fluidoSkin>
     <reflowSkin>
       <protocolRelativeURLs>false</protocolRelativeURLs>
       <absoluteResourceURL>${this.site.url}</absoluteResourceURL>
@@ -116,34 +126,35 @@
     <head>
       <![CDATA[
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <link rel="stylesheet" href="$resourcePath/css/custom.css">
+      <meta http-equiv="Content-Type" content="text/html; charset=${outputEncoding}" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous" />
+      <link rel="stylesheet" href="./css/custom.css" />
       ]]>
     </head>
-    <links>
-      <item name="GitHub Project" href="${this.scm.url}"/>
-    </links>
-
     <breadcrumbs>
       <item name="OSS Maven" href="./"/>
     </breadcrumbs>
     <menu name="Main" inherit="top">
       <item name="Home" href="./"/>
       <item name="GitHub project" href="${this.scm.url}"/>
-      <item name="Licenses" href="${this.scm.url}/LICENSE.md"/>
+    </menu>
+    <menu name="Modules" ref="modules"/>
+    <menu name="Documentation" inherit="bottom">
+      <item name="Maven Usage" href="index.html#usage"/>
+      <item name="Build Features" href="index.html#build-features"/>
+      <item name="Eclipse Configuration" href="oss-build-support/"/>
     </menu>
     <menu name="Contribute" inherit="bottom">
       <item name="Contribute" href="${this.scm.url}/CONTRIBUTING.md"/>
       <item name="Issues" href="${this.issueManagement.url}"/>
       <item name="Fork on GitHub" href="${this.scm.url}"/>
     </menu>
-    <menu name="Documentation" inherit="bottom">
-      <item name="Maven Usage" href="index.html#usage"/>
-      <item name="Build Features" href="index.html#build-features"/>
-      <item name="Eclipse Configuration" href="oss-build-support/index.html"/>
-    </menu>
-    <menu name="Modules" ref="modules"/>
     <menu name="Maven Documentation" ref="reports" inherit="bottom"/>
     <!-- Disable copyright footer -->
-    <footer/>
+    <footer>
+      <![CDATA[
+      Copyright and related rights waived via <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.
+      ]]>
+    </footer>
   </body>
 </project>

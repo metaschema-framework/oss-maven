@@ -24,15 +24,12 @@
 
 		<dependency.asm.version>9.7</dependency.asm.version>
 		<dependency.checkstyle.version>10.17.0</dependency.checkstyle.version>
-		<!-- the doxia version relates directly to the maven-site-plugin version -->
-		<dependency.doxia.version>2.0.0-M7</dependency.doxia.version>
+		<dependency.doxia-site-tools.version>2.0.0-M18</dependency.doxia-site-tools.version>
 		<dependency.extra-enforcer-rules.version>1.8.0</dependency.extra-enforcer-rules.version>
 		<dependency.junit.version>4.13.2</dependency.junit.version>
 		<dependency.junit5.version>5.10.3</dependency.junit5.version>
 		<dependency.maven-plugin-tools.version>3.8.1</dependency.maven-plugin-tools.version>
-		<dependency.maven-velocity.version>2.3</dependency.maven-velocity.version>
 		<dependency.pmd.version>7.4.0</dependency.pmd.version>
-		<dependency.reflowSkin.version>2.3.4</dependency.reflowSkin.version>
 		<dependency.spotbugs-annotations.version>4.8.6</dependency.spotbugs-annotations.version>
 		<dependency.xmlbeans.version>5.2.1</dependency.xmlbeans.version>
 
@@ -58,7 +55,7 @@
 		<plugin.maven-resources.version>3.3.1</plugin.maven-resources.version>
 		<plugin.maven-scm.version>2.1.0</plugin.maven-scm.version>
 		<plugin.maven-scm-publish.version>3.3.0</plugin.maven-scm-publish.version>
-		<plugin.maven-site.version>4.0.0-M9</plugin.maven-site.version>
+		<plugin.maven-site.version>4.0.0-M16</plugin.maven-site.version>
 		<plugin.maven-source.version>3.3.1</plugin.maven-source.version>
 		<plugin.maven-surefire.version>3.3.1</plugin.maven-surefire.version>
 		<plugin.maven-surefire-report.version>3.3.1</plugin.maven-surefire-report.version>
@@ -541,34 +538,7 @@
 						<!-- <scmBranch>github-pages</scmBranch> -->
 						<relativizeSiteLinks>true</relativizeSiteLinks>
 						<generateReports>true</generateReports>
-						<!--
-						<templateDirectory>${project.basedir}/target/site-files/site</templateDirectory> -->
-						<!-- <template>site.vm</template> -->
 					</configuration>
-					<dependencies>
-						<dependency>
-							<groupId>io.github.devacfr.maven.skins</groupId>
-							<artifactId>reflow-velocity-tools</artifactId>
-							<version>${dependency.reflowSkin.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.apache.maven.doxia</groupId>
-							<artifactId>doxia-core</artifactId>
-							<version>${dependency.doxia.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.apache.maven.doxia</groupId>
-							<artifactId>doxia-module-markdown</artifactId>
-							<version>${dependency.doxia.version}</version>
-						</dependency>
-<!--
-						<dependency>
-							<groupId>org.apache.velocity</groupId>
-							<artifactId>velocity-engine-core</artifactId>
-							<version>${dependency.maven-velocity.version}</version>
-						</dependency>
--->
-					</dependencies>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -579,6 +549,12 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jxr-plugin</artifactId>
 					<version>${plugin.maven-jxr.version}</version>
+					<configuration>
+						<excludes>
+							<!-- doesn't produce correct HTML since stylesheet.css is broken. -->
+							<exclude>**/module-info.java</exclude>
+						</excludes>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.jacoco</groupId>
@@ -686,6 +662,13 @@
 				<artifactId>maven-site-plugin</artifactId>
 				<executions>
 					<execution>
+						<id>attach-descriptor</id>
+						<phase>site</phase>
+						<goals>
+							<goal>attach-descriptor</goal>
+						</goals>
+					</execution>
+					<execution>
 						<id>stage-for-publish</id>
 						<phase>site</phase>
 						<goals>
@@ -723,6 +706,10 @@
 							<report>dependency-management</report>
 							<report>plugins</report>
 						</reports>
+						<configuration>
+							<linkOnly>true</linkOnly>
+							<showAvatarImages>false</showAvatarImages>
+						</configuration>
 					</reportSet>
 				</reportSets>
 			</plugin>

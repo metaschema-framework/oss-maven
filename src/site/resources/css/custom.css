@@ -1,12 +1,18 @@
-.subfooter {
-    display: none;
+a.externalLink[href^=https],a.externalLink[href^=http]  {
+  background: none;
+  padding-right: 0;
 }
-#m-top-navbar.bg-primary {
-  background-color: #000 !important;
+
+a.externalLink[href^=https]::after,a.externalLink[href^=http]::after {
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
+  content: "\f35d";
+  font-size: .5rem;
+  font-weight: 900;
+  margin-left: 3px;
 }
-#brandtext {
-  display: inline;
-}
-.projectVersion {
-  padding-right: 0.5rem;
+
+footer {
+  text-align: center;
+  padding-bottom: 10px;
 }
