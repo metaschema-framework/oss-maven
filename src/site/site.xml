@@ -136,7 +136,7 @@
     </breadcrumbs>
     <menu name="Main" inherit="top">
       <item name="Home" href="./"/>
-      <item name="GitHub project" href="${this.scm.url}"/>
+      <item name="Fork on GitHub" href="${this.scm.url}"/>
     </menu>
     <menu name="Modules" ref="modules"/>
     <menu name="Documentation" inherit="bottom">
@@ -147,7 +147,6 @@
     <menu name="Contribute" inherit="bottom">
       <item name="Contribute" href="${this.scm.url}/CONTRIBUTING.md"/>
       <item name="Issues" href="${this.issueManagement.url}"/>
-      <item name="Fork on GitHub" href="${this.scm.url}"/>
     </menu>
     <menu name="Maven Documentation" ref="reports" inherit="bottom"/>
     <!-- Disable copyright footer -->

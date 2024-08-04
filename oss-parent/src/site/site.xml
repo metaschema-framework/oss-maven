@@ -4,6 +4,8 @@
   xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 http://maven.apache.org/xsd/decoration-1.8.0.xsd"
   name="Maven Parent">
 
+  <edit>${this.scm.url}</edit>
+
   <body>
     <head>
       <![CDATA[

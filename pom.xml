@@ -7,11 +7,17 @@
 	<name>Build Root</name>
 	<description>A common build root for all Metaschema projects.</description>
 	<url>${site.url}</url>
+
+	<prerequisites>
+		<maven>${mojo.maven.version}</maven>
+	</prerequisites>
+
 	<properties>
 		<!-- shared site configuration -->
 		<site.url>https://oss-maven.metaschema.dev</site.url>
 		<scm.url>https://github.com/metaschema-framework/oss-maven</scm.url>
 		<issueManagement.url>https://github.com/metaschema-framework/oss-maven/issues</issueManagement.url>
+
 		<!-- various encodings -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
@@ -76,7 +82,7 @@
 		<system>GitHub Issues</system>
 	</issueManagement>
 	<scm>
-		<url>${scm.url}/tree/main</url>
+		<url>${scm.url}/tree/develop</url>
 		<connection>scm:git:ssh://git@github.com/metaschema-framework/oss-maven.git</connection>
 		<developerConnection>
 			scm:git:ssh://git@github.com/metaschema-framework/oss-maven.git</developerConnection>
@@ -323,7 +329,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-plugin-plugin</artifactId>
-					<version>${plugin.maven-plugin.version}</version>
+					<version>${dependency.maven-plugin-tools.version}</version>
 					<dependencies>
 						<dependency>
 							<groupId>org.apache.maven.plugin-tools</groupId>
