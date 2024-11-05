@@ -1,7 +1,7 @@
 <ruleset name="Custom Rules"
 	xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.github.io/schema/ruleset_2_0_0.xsd">
 
 	<description>Customizations of the built in rules</description>
 
@@ -38,7 +38,6 @@
 	</rule>
 	<rule ref="category/java/errorprone.xml">
 		<!-- fix for: aktStatus is NULL: maximum Iterations exceeded -->
-		<exclude name="DataflowAnomalyAnalysis" />
 		<exclude name="AssignmentInOperand" />
 		<exclude name="AvoidLiteralsInIfCondition" />
 		<!-- Annoying errors -->

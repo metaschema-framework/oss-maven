@@ -2,6 +2,7 @@
 .settings/
 .classpath
 .project
+
 # maven
 target/
 pom.xml.releaseBackup
@@ -10,3 +11,4 @@ release.properties
 /velocity.log
 .pmd
 .factorypath
+/maven2
