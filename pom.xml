@@ -95,7 +95,7 @@
 		</repository>
 		<snapshotRepository>
 			<id>repo-snapshot</id>
-			<url>https://raw.githubusercontent.com/david-waltermire/oscal-cli-enhanced/refs/heads/maven2/</url>
+			<url>https://raw.githubusercontent.com/metaschema-framework/maven2/refs/heads/main/</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
@@ -518,16 +518,7 @@
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>${plugin.maven-deploy.version}</version>
 				</plugin>
-				<plugin>
-          <groupId>org.sonatype.central</groupId>
-          <artifactId>central-publishing-maven-plugin</artifactId>
-          <version>0.5.0</version>
-          <extensions>true</extensions>
-          <configuration>
-             <publishingServerId>central</publishingServerId>
-             <autoPublish>false</autoPublish>
-          </configuration>
-        </plugin>
+
 <!--
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
@@ -781,9 +772,15 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.sonatype.central</groupId>
-						<artifactId>central-publishing-maven-plugin</artifactId>
-					</plugin>
+			          <groupId>org.sonatype.central</groupId>
+			          <artifactId>central-publishing-maven-plugin</artifactId>
+			          <version>0.5.0</version>
+			          <extensions>true</extensions>
+			          <configuration>
+			             <publishingServerId>central</publishingServerId>
+			             <autoPublish>false</autoPublish>
+			          </configuration>
+			        </plugin>
 				</plugins>
 			</build>
 		</profile>
