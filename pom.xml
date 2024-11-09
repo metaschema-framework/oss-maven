@@ -98,6 +98,7 @@
 			<url>https://raw.githubusercontent.com/metaschema-framework/maven2/refs/heads/main</url>
 			<snapshots>
 				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
 			</snapshots>
 			<releases>
 				<enabled>false</enabled>
