@@ -5,9 +5,7 @@
 
 	<description>Customizations of the built in rules</description>
 
-	<rule ref="category/java/bestpractices.xml">
-		<exclude name="JUnitTestContainsTooManyAsserts" />
-	</rule>
+	<rule ref="category/java/bestpractices.xml"/>
 	<rule ref="category/java/codestyle.xml">
 		<exclude name="LocalVariableCouldBeFinal" />
 		<exclude name="LongVariable" />
