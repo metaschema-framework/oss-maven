@@ -597,11 +597,6 @@
 				<!-- ========================= -->
 				<!-- site-deploy               -->
 				<!-- ========================= -->
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-scm-publish-plugin</artifactId>
-					<version>${plugin.maven-scm-publish.version}</version>
-				</plugin>
 				<!-- ========================= -->
 				<!-- other                     -->
 				<!-- ========================= -->
