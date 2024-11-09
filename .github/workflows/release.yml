@@ -43,7 +43,7 @@ jobs:
     # -------------------------
     - name: Deploy Maven Artifacts
       run: |
-        mvn -B -e -Prelease -Pgpg -Prelease deploy
+        mvn -B -e -Prelease -Pdeployment -Pgpg deploy
       env:
         MAVEN_USERNAME: ${{ secrets.OSSRH_USER }}
         MAVEN_CENTRAL_TOKEN: ${{ secrets.OSSRH_TOKEN }}
@@ -82,7 +82,7 @@ jobs:
     # -------------------------
     - name: Build Website
       run: |
-        mvn -B -e -Prelease -Pdeployment package site site:stage
+        mvn -B -e -Prelease package site site:stage
     - name: Run deploy script
       run: |
         touch target/staging/.nojekyll

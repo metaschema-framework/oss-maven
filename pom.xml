@@ -95,7 +95,7 @@
 		</repository>
 		<snapshotRepository>
 			<id>repo-snapshot</id>
-			<url>https://raw.githubusercontent.com/metaschema-framework/maven2/refs/heads/main/</url>
+			<url>https://raw.githubusercontent.com/metaschema-framework/maven2/refs/heads/main</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
@@ -597,6 +597,11 @@
 				<!-- ========================= -->
 				<!-- site-deploy               -->
 				<!-- ========================= -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-publish-plugin</artifactId>
+                    <version>${plugin.maven-scm-publish.version}</version>
+                </plugin>
 				<!-- ========================= -->
 				<!-- other                     -->
 				<!-- ========================= -->
