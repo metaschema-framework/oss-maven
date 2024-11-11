@@ -70,7 +70,7 @@
 		<plugin.build-helper.version>3.6.0</plugin.build-helper.version>
 		<plugin.formatter.version>2.24.1</plugin.formatter.version>
 		<plugin.jacoco.version>0.8.12</plugin.jacoco.version>
-		<plugin.jdepend.version>2.0</plugin.jdepend.version>
+		<plugin.jdepend.version>2.1</plugin.jdepend.version>
 		<plugin.license.version>4.5</plugin.license.version>
 		<plugin.nexus-staging.version>1.7.0</plugin.nexus-staging.version>
 		<plugin.spotbugs.version>4.8.6.2</plugin.spotbugs.version>
