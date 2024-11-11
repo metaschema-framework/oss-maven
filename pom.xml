@@ -37,7 +37,7 @@
 		<dependency.maven-plugin-tools.version>3.13.1</dependency.maven-plugin-tools.version>
 		<dependency.pmd.version>7.4.0</dependency.pmd.version>
 		<dependency.spotbugs-annotations.version>4.8.6</dependency.spotbugs-annotations.version>
-		<dependency.xmlbeans.version>5.2.1</dependency.xmlbeans.version>
+		<dependency.xmlbeans.version>5.2.2</dependency.xmlbeans.version>
 
 		<plugin.maven-antrun.version>3.1.0</plugin.maven-antrun.version>
 		<plugin.maven-assembly.version>3.7.1</plugin.maven-assembly.version>
