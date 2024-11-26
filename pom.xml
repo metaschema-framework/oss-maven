@@ -27,7 +27,7 @@
 		<mojo.maven.version>3.8.1</mojo.maven.version>
 
 		<dependency.asm.version>9.7</dependency.asm.version>
-		<dependency.checkstyle.version>10.17.0</dependency.checkstyle.version>
+		<dependency.checkstyle.version>10.20.1</dependency.checkstyle.version>
 		<dependency.doxia-site-tools.version>2.0.0-M18</dependency.doxia-site-tools.version>
 		<dependency.extra-enforcer-rules.version>1.8.0</dependency.extra-enforcer-rules.version>
 		<dependency.junit5.version>5.11.3</dependency.junit5.version>
