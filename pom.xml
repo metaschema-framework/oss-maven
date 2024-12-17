@@ -31,7 +31,7 @@
 		<dependency.doxia-site-tools.version>2.0.0-M18</dependency.doxia-site-tools.version>
 		<dependency.extra-enforcer-rules.version>1.8.0</dependency.extra-enforcer-rules.version>
 		<dependency.junit5.version>5.11.3</dependency.junit5.version>
-		<dependency.junit5.version>5.11.0</dependency.junit5.version>
+		<dependency.junit5.version>5.11.4</dependency.junit5.version>
 		<dependency.maven-plugin-tools.version>3.15.1</dependency.maven-plugin-tools.version>
 		<dependency.pmd.version>7.7.0</dependency.pmd.version>
 		<dependency.spotbugs-annotations.version>4.8.6</dependency.spotbugs-annotations.version>
