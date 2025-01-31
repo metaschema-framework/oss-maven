@@ -33,7 +33,7 @@
 		<dependency.junit5.version>5.11.3</dependency.junit5.version>
 		<dependency.junit5.version>5.11.0</dependency.junit5.version>
 		<dependency.maven-plugin-tools.version>3.15.1</dependency.maven-plugin-tools.version>
-		<dependency.pmd.version>7.7.0</dependency.pmd.version>
+		<dependency.pmd.version>7.10.0</dependency.pmd.version>
 		<dependency.spotbugs-annotations.version>4.8.6</dependency.spotbugs-annotations.version>
 		<dependency.xmlbeans.version>5.2.2</dependency.xmlbeans.version>
 
