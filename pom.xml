@@ -26,16 +26,19 @@
 		
 		<mojo.maven.version>3.8.1</mojo.maven.version>
 
-		<dependency.asm.version>9.7</dependency.asm.version>
-		<dependency.checkstyle.version>10.17.0</dependency.checkstyle.version>
+		<dependency.asm.version>9.7.1</dependency.asm.version>
+		<dependency.checkstyle.version>10.21.3</dependency.checkstyle.version>
 		<dependency.doxia-site-tools.version>2.0.0-M18</dependency.doxia-site-tools.version>
-		<dependency.extra-enforcer-rules.version>1.8.0</dependency.extra-enforcer-rules.version>
-		<dependency.junit5.version>5.11.3</dependency.junit5.version>
-		<dependency.junit5.version>5.11.0</dependency.junit5.version>
+		<dependency.extra-enforcer-rules.version>1.9.0</dependency.extra-enforcer-rules.version>
+		<dependency.junit.version>4.13.2</dependency.junit.version>
+		<dependency.junit5.version>5.12.0</dependency.junit5.version>
+		<dependency.log4j.version>2.24.3</dependency.log4j.version>
 		<dependency.maven-plugin-tools.version>3.15.1</dependency.maven-plugin-tools.version>
-		<dependency.pmd.version>7.7.0</dependency.pmd.version>
-		<dependency.spotbugs-annotations.version>4.8.6</dependency.spotbugs-annotations.version>
-		<dependency.xmlbeans.version>5.2.2</dependency.xmlbeans.version>
+		<dependency.pmd.version>7.10.0</dependency.pmd.version>
+		<dependency.spotbugs-annotations.version>4.9.1</dependency.spotbugs-annotations.version>
+		<dependency.xmlbeans.version>5.3.0</dependency.xmlbeans.version>
+		<!-- fix for missing runtime dependency for xmlbeans -->
+		<dependency.javaparser-symbol-solver-core.version>3.26.3</dependency.javaparser-symbol-solver-core.version>
 
 		<plugin.maven-antrun.version>3.1.0</plugin.maven-antrun.version>
 		<plugin.maven-assembly.version>3.7.1</plugin.maven-assembly.version>
@@ -57,6 +60,7 @@
 		<plugin.maven-pmd.version>3.26.0</plugin.maven-pmd.version>
 		<plugin.maven-project-info-reports.version>3.8.0</plugin.maven-project-info-reports.version>
 		<plugin.maven-release.version>3.1.1</plugin.maven-release.version>
+		<plugin.maven-reporting-api.version>4.0.0</plugin.maven-reporting-api.version>
 		<plugin.maven-resources.version>3.3.1</plugin.maven-resources.version>
 		<plugin.maven-scm.version>2.1.0</plugin.maven-scm.version>
 		<plugin.maven-scm-publish.version>3.3.0</plugin.maven-scm-publish.version>
@@ -579,7 +583,7 @@
 						<dependency>
 							<groupId>org.apache.maven.reporting</groupId>
 							<artifactId>maven-reporting-api</artifactId>
-							<version>4.0.0-M12</version>
+							<version>${plugin.maven-reporting-api.version}</version>
 						</dependency>
 					</dependencies>
 				</plugin>
