@@ -80,7 +80,7 @@
 		<plugin.spotbugs.version>4.8.6.6</plugin.spotbugs.version>
 		<plugin.taglist.version>3.2.1</plugin.taglist.version>
 		<plugin.versions.version>2.18.0</plugin.versions.version>
-		<plugin.central-plublishing.version>0.6.0</plugin.central-plublishing.version>
+		<plugin.central-plublishing.version>0.7.0</plugin.central-plublishing.version>
 	</properties>
 	<issueManagement>
 		<url>${issueManagement.url}</url>
@@ -777,7 +777,7 @@
 					<plugin>
 			          <groupId>org.sonatype.central</groupId>
 			          <artifactId>central-publishing-maven-plugin</artifactId>
-			          <version>0.5.0</version>
+			          <version>0.7.0</version>
 			          <extensions>true</extensions>
 			          <configuration>
 			             <publishingServerId>central</publishingServerId>
