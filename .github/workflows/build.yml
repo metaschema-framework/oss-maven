@@ -82,10 +82,12 @@ jobs:
       run: |
         MVN_COORDS=$(echo '${project.groupId}:${project.artifactId}:${project.version}' | mvn -N -q -DforceStdout help:evaluate)
         cd maven2
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
         git pull -r -s ours --autostash
-        git add -A
         git config user.name "$(git log -n 1 --pretty=format:%an)"
         git config user.email "$(git log -n 1 --pretty=format:%ae)"
+        git add -A
         git commit -m "[CI SKIP] Deploying artifacts for $MVN_COORDS."
         git push
 #    - name: Perform CodeQL Analysis
