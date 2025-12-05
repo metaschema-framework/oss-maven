@@ -12,3 +12,6 @@ release.properties
 .pmd
 .factorypath
 /maven2
+
+# Claude
+CLAUDE.local.md
