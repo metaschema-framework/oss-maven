@@ -67,7 +67,7 @@
 		<plugin.maven-site.version>4.0.0-M16</plugin.maven-site.version>
 		<plugin.maven-source.version>3.3.1</plugin.maven-source.version>
 		<plugin.maven-surefire.version>3.5.2</plugin.maven-surefire.version>
-		<plugin.maven-surefire-report.version>3.5.2</plugin.maven-surefire-report.version>
+		<plugin.maven-surefire-report.version>3.5.4</plugin.maven-surefire-report.version>
 		<plugin.maven-toolchains.version>3.2.0</plugin.maven-toolchains.version>
 		<plugin.maven-war.version>3.4.0</plugin.maven-war.version>
 
