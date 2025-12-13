@@ -71,7 +71,7 @@
 		<plugin.maven-toolchains.version>3.2.0</plugin.maven-toolchains.version>
 		<plugin.maven-war.version>3.4.0</plugin.maven-war.version>
 
-		<plugin.build-helper.version>3.6.0</plugin.build-helper.version>
+		<plugin.build-helper.version>3.6.1</plugin.build-helper.version>
 		<plugin.formatter.version>2.24.1</plugin.formatter.version>
 		<plugin.jacoco.version>0.8.12</plugin.jacoco.version>
 		<plugin.jdepend.version>2.1</plugin.jdepend.version>
