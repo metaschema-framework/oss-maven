@@ -24,7 +24,7 @@
 		<maven.compiler.release>11</maven.compiler.release>
 		<javac.debuglevel>lines,source,vars</javac.debuglevel>
 		
-		<mojo.maven.version>3.8.1</mojo.maven.version>
+		<mojo.maven.version>3.9.0</mojo.maven.version>
 
 		<dependency.asm.version>9.9</dependency.asm.version>
 		<dependency.checkstyle.version>10.21.3</dependency.checkstyle.version>

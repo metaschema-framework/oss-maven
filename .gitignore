@@ -15,3 +15,4 @@ release.properties
 
 # Claude
 CLAUDE.local.md
+/.claude/settings.local.json
