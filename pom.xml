@@ -62,7 +62,7 @@
 		<plugin.maven-release.version>3.1.1</plugin.maven-release.version>
 		<plugin.maven-reporting-api.version>4.0.0</plugin.maven-reporting-api.version>
 		<plugin.maven-resources.version>3.3.1</plugin.maven-resources.version>
-		<plugin.maven-scm.version>2.1.0</plugin.maven-scm.version>
+		<plugin.maven-scm.version>2.2.1</plugin.maven-scm.version>
 		<plugin.maven-scm-publish.version>3.3.0</plugin.maven-scm-publish.version>
 		<plugin.maven-site.version>4.0.0-M16</plugin.maven-site.version>
 		<plugin.maven-source.version>3.3.1</plugin.maven-source.version>
