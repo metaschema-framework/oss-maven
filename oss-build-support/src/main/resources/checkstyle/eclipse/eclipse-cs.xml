@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <profiles version="2">
-    <profile kind="CleanUpProfile" name="SecAuto Checksyle" version="2">
+    <profile kind="CleanUpProfile" name="SecAuto Checkstyle" version="2">
         <setting id="cleanup.array_with_curly" value="true"/>
         <setting id="cleanup.use_autoboxing" value="true"/>
         <setting id="cleanup.overridden_assignment_move_decl" value="true"/>
