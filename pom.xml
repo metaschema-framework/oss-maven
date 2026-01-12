@@ -73,6 +73,7 @@
 
 		<plugin.build-helper.version>3.6.1</plugin.build-helper.version>
 		<plugin.formatter.version>2.29.0</plugin.formatter.version>
+		<plugin.impsort.version>1.12.0</plugin.impsort.version>
 		<plugin.jacoco.version>0.8.12</plugin.jacoco.version>
 		<plugin.jdepend.version>2.1</plugin.jdepend.version>
 		<plugin.license.version>5.0.0</plugin.license.version>
@@ -348,6 +349,22 @@
 					<groupId>net.revelc.code.formatter</groupId>
 					<artifactId>formatter-maven-plugin</artifactId>
 					<version>${plugin.formatter.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>net.revelc.code</groupId>
+					<artifactId>impsort-maven-plugin</artifactId>
+					<version>${plugin.impsort.version}</version>
+					<configuration>
+						<!-- Match checkstyle.importorder: #,com,gov,net,org,java,javax,* -->
+						<groups>com.,gov.,net.,org.,java.,javax.,*</groups>
+						<staticGroups>*</staticGroups>
+						<staticAfter>false</staticAfter>
+						<removeUnused>true</removeUnused>
+						<!-- Exclude module-info.java - imports are used in provides clauses -->
+						<excludes>
+							<exclude>**/module-info.java</exclude>
+						</excludes>
+					</configuration>
 				</plugin>
 				<!-- ========================= -->
 				<!-- process-resources         -->
@@ -651,6 +668,10 @@
 			<plugin>
 				<groupId>net.revelc.code.formatter</groupId>
 				<artifactId>formatter-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>net.revelc.code</groupId>
+				<artifactId>impsort-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
