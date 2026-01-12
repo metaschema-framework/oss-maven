@@ -1,0 +1,20 @@
+{
+  "extraKnownMarketplaces": {
+    "metaschema-framework": {
+      "source": {
+        "source": "github",
+        "repo": "metaschema-framework/claude-plugins"
+      }
+    },
+    "superpowers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "dev-metaschema@metaschema-framework": true,
+    "superpowers@superpowers-marketplace": true
+  }
+}
